@@ -1,3 +1,52 @@
+/* Typography */
+
+body {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+    color:#424242;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2.5em;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+h6 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.2em;
+    font-style: normal;
+    line-height: 150%;
+}
+
+/* Jumbotron */
 .chevron-down {
         display: block;
         margin-left: auto;
@@ -6,14 +55,41 @@
         padding-top: 5%;
 }
 
-.nav-item {
+/* Navbar */
+.navbar {
+    background-color: #f92940;
+  }
+  .navbar .navbar-brand {
     color: #ffffff;
-}
-
-.nav-item:hover {
+  }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
     color: #000000;
+  }
+  .navbar .navbar-text {
+    color: #ffffff;
+  }
+  .navbar .navbar-text a {
+    color: #000000;
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: white;
 }
 
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:active {
+    color: black;
+}
+
+
+/* Body Blocks */
 .container {
     padding-top: 5%;
     padding-bottom: 5%;
