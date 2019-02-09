@@ -49,9 +49,13 @@ h6 {
 
 p {
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1 em;
     font-style: normal;
     line-height: 150%;
+}
+
+caption {
+    font-size: .08em;
 }
 
 /* Jumbotron */
@@ -61,8 +65,9 @@ p {
         margin-right: auto;
         width: 5%;
         padding-top: 5%;
-        transition-duration: 1s;
+        
 }
+
 
 img.vert-move {
     -webkit-animation: mover 1s infinite  alternate;
@@ -128,6 +133,12 @@ img.vert-move {
 .card {
     border: 0;
     border-radius: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.card-body {
+    background-color: black;
 }
 
 .btn-link {
@@ -206,6 +217,7 @@ img.vert-move {
 /*Footer*/
 .footer {
     background: black;
+    padding-bottom: 5%;
 }
 
 .foot-link {
@@ -227,7 +239,6 @@ img.vert-move {
 }
 
 .foot {
-    align-content: center;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -243,7 +254,7 @@ hr {
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     h1 {
         font-size: 3em;
@@ -263,6 +274,10 @@ hr {
     
     h5 {
         font-size: 1.75em;
+    }
+
+    h6 {
+        font-size: 1em;
     }
 
   }
