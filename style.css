@@ -1,5 +1,7 @@
 /* Typography */
 
+
+
 body {
     font-family: futura-pt, sans-serif;
     font-style: normal;
@@ -9,10 +11,16 @@ body {
     letter-spacing: 0.05em;
 }
 
+section {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
 h1 {
     font-weight: 900;
     font-style: normal;
-    font-size: 3em;
+    font-size: 3.5em;
     letter-spacing: 0.1em;
     color: black;
 }
@@ -53,19 +61,37 @@ p {
         margin-right: auto;
         width: 5%;
         padding-top: 5%;
+        transition-duration: 1s;
 }
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 
 /* Navbar */
 .navbar {
     background-color: #f92940;
     height: 80px;
   }
-.navbar-drk {
 
-}
-  .navbar .navbar-brand {
+.navbar .navbar-brand {
     color: #ffffff;
   }
+
   .navbar .navbar-brand:hover,
   .navbar .navbar-brand:focus {
     color: #000000;
@@ -92,11 +118,41 @@ p {
     color: black;
 }
 
+/*Mission*/
+.about .about-slider img {
+    width: 100%;
+    height: auto;
+}
+
+/*CAUSES*/
+.card {
+    border: 0;
+    border-radius: 0;
+}
+
+.btn-link {
+    color: #f92940;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.btn-link:hover {
+    color: rgb(209, 0, 0);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: black);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
 
 /* Body Blocks */
 .container {
     padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 .px-4 {
@@ -121,12 +177,92 @@ p {
     padding-bottom: 5%;
   }
 
-  .mx-1 {
+.mx-1 {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+/* Find your Chapter */
+.input-group{
+    height: 66px;
+}
+
+.btn-primary {
+    background-color: #f92940;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(209, 0, 0);
+    border: none;
+}
+
+.btn-primary:active {
+    background-color: black;
+}
+
+
 
 /*Footer*/
 .footer {
     background: black;
 }
+
+.foot-link {
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: white;
+    display: block;
+    padding: .5rem 1rem;
+    }
+
+.foot-link:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.foot-link:active {
+    color: red;
+}
+
+.foot {
+    align-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+hr { 
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    height: 4px;
+    background-color: #f92940;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.25em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+    
+    h5 {
+        font-size: 1.75em;
+    }
+
+  }
